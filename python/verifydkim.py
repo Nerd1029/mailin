@@ -16,7 +16,7 @@ def main():
     print('[' + os.path.basename(__file__) + '] isDkimValid = ' + str(res))
     if not res:
         # Invalid signature, exit with code 11.
-        sys.exit(11)
+        sys.exit(11) #Where does 11 come from? It would make the code more readable if you included a comment saying what code 11 is. (Another solution would be to just define it locally.)
 
 if __name__ == '__main__':
     main()
